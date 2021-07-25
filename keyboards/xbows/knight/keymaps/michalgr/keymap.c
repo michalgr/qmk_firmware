@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  KC_Q,    KC_W,       KC_E,       KC_R,           KC_T,       KC_Y,    KC_U,        KC_I,   KC_O,    KC_P,   KC_LBRC, KC_RBRC, KC_BSLS, KC_PGUP,
     KC_CAPS, KC_A,    LT(4,KC_S), LT(5,KC_D), LT(3,KC_F),     LT(2,KC_G), KC_BSPC, LT(2, KC_H), KC_J,   KC_K,    KC_L,   KC_SCLN, KC_QUOT, KC_ENT,  KC_PGDN,
     KC_LSFT, KC_Z,    KC_X,       KC_C,       KC_V,           KC_B,       KC_ENT,  KC_N,        KC_M,   KC_COMM, KC_DOT, KC_SLSH, KC_RSFT, KC_UP,
-    KC_LCTL, KC_LGUI, KC_LALT,                LGUI_T(KC_SPC), KC_LCTL,    KC_RALT, RSFT_T(KC_ESC),      KC_RALT, MO(1),  KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT),
+    KC_LCTL, KC_LGUI, KC_LALT,                LCTL_T(KC_SPC), KC_LGUI,    KC_RALT, RSFT_T(KC_ESC),      KC_RALT, MO(1),  KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT),
   [1] = LAYOUT(
     RESET,     KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_CALC,   KC_MYCM,  KC_MSEL,   KC_MAIL,   NK_TOGG,   EEP_RST,
     KC_TRNS,   KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS,  KC_TRNS,             KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS,  KC_TRNS,   KC_TRNS,   KC_TRNS,   KC_NLCK,
