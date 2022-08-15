@@ -33,6 +33,8 @@ enum layers {
 
 #define CTL_SPC CTL_T(KC_SPC)
 #define SFT_ESC SFT_T(KC_ESC)
+#define GUI_BSP GUI_T(KC_BSPC)
+#define ALT_ENT ALT_T(KC_ENT)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /* Keymap VANILLA: (Base Layer) Default Layer
@@ -57,7 +59,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                      KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_RSFT, KC_PGUP,
     KC_CAPS, KC_A,    LTMO(S), LTCO(D), LTAR(F), LTDI(G),     KC_BSPC,      LTDI(H), KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,      KC_ENT,      KC_PGDN,
     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,        KC_ENT,       KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_BSLS,          KC_UP,
-    KC_LCTL, KC_LGUI,     KC_LALT,         CTL_SPC,       KC_LGUI, KC_RALT,     SFT_ESC,          KC_RALT,      MO_CONF, KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT
+    KC_LCTL, KC_LGUI,     KC_LALT,         CTL_SPC,       GUI_BSP, ALT_ENT,     SFT_ESC,          KC_RALT,      MO_CONF, KC_RCTL, KC_LEFT, KC_DOWN, KC_RGHT
   ),
   [CONFIG] = LAYOUT(
     QK_BOOT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_CALC, KC_MYCM, KC_MSEL, KC_MAIL,      NK_TOGG,         EEP_RST,
